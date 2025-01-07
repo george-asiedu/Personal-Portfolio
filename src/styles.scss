@@ -11,4 +11,8 @@
     .links {
         @apply inline-block px-[0.5rem] cursor-pointer mx-[0.5rem] text-sm transition duration-500 ease-in-out hover:font-medium;
     }
+
+    .btn-primary {
+        @apply px-3 py-[6px] bg-primary text-white text-sm rounded-md shadow-md transition duration-500 ease-in-out hover:bg-transparent hover:text-primary hover:border-slate-100 hover:border;
+    }
 }
