@@ -1,0 +1,27 @@
+.polymorphic-container {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    transition: clip-path 0.5s ease-in-out, transform 0.5s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.polymorphic-container:hover {
+    clip-path: circle(50%);
+    transform: rotate(10deg);
+}
+
+.polymorphic-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.polymorphic-container:hover .polymorphic-image {
+    transform: scale(1.1);
+}
