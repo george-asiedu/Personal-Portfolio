@@ -1,0 +1,12 @@
+<button 
+    type="button" 
+    class="w-full py-[6px] px-[0.625rem] border-none bg-transparent rounded-[4px] cursor-pointer shadow-inner shadow-secondary" 
+    (click)="themeSwitcher()" 
+    [attr.data-active-theme]=" isDark ? 'dark' : 'light' "
+>
+    @if (isDark) {
+        <img class="w-full" src="icon-dark-mode.svg" alt="icon-dark-mode">
+    } @else { 
+        <img class="w-full" src="icon-light-mode.svg" alt="icon-light-mode">
+    }
+</button>
