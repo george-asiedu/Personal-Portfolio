@@ -1,35 +1,74 @@
 <div class="w-full h-screen flex flex-col bg-white border-none px-[6%] py-[2%] relative">
     <header class="flex items-center justify-between w-full overflow-hidden border-none bg-inherit py-[4px] px-0">
         <div class="flex items-center">
-            <div class="flex items-center justify-center lg:mr-8 h-[40px] w-[40px] rounded-full bg-primary">
-                <h1 class="tracking-wide text-[26xp] font-bold text-white text-center">GA</h1>
+            <div class="flex items-center justify-center lg:mr-6 h-[40px] w-[40px] rounded-full bg-primary">
+                <h1 class="tracking-wide font-bold text-white text-center">GA</h1>
             </div>
             <nav>
                 <a class="links" href="">Home</a>
                 <a class="links" href="#about_me">About Me</a>
-                <a class="links" href="#skils">Skills</a>
+                <a class="links" href="#skills">Skills</a>
                 <a class="links" href="#projects">Projects</a>
                 <a class="links" href="#testimonials">Testimonials</a>
             </nav>
         </div>
         <div class="flex items-center">
-            <app-theme-switcher/>
+            <app-theme-switcher />
             <a 
                 class="links bg-secondary text-tertiary hover:text-primary px-2 py-[6px] rounded-[4px]" 
                 href="#contact">
                 Contact
             </a>
             <a 
-                class="links bg-secondary text-tertiary hover:text-primary px-4 py-[6px] rounded-[4px]" 
-                href="#blog">
-                Blog
-            </a>
-            <button 
-                type="button"
-                class="px-2 py-[6px] rounded-[4px] bg-primary text-white text-sm font-medium"
+                href="resume.pdf" 
+                download="George_Asiedu_Resume.pdf" 
+                class="
+                    px-2 py-[6px] rounded-[4px] bg-primary text-white text-sm font-medium text-center 
+                    hover:bg-transparent hover:text-primary hover:border-slate-100 hover:border
+                "
             >
                 Download Resume
-            </button>
+            </a>
         </div>
     </header>
+
+    <div class="w-full pt-[8%] grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="flex flex-col w-full gap-8">
+            <div class="polymorphic-container">
+                <img src="Hero_IMG.jpg" alt="hero_img" class="polymorphic-image">
+            </div>                        
+            <h2 class="leading-[52px] text-[40px] tracking-wide font-medium">Hello!, I'm George Kwabena <br> Asiedu</h2>
+        </div>
+        <div class="flex flex-col w-full gap-3">
+            <h3 class="text-2xl tracking-wide font-medium mb-4">A Frontend Web Developer based in <br> Accra, Ghana.</h3>
+            <p class="font-light text-[15px] tracking-wide mb-3">
+                I'm a Frontend Developer passionate about creating seamless, responsive, and visually stunning 
+                web experiences. With expertise in modern frameworks like Angular and React, I specialize 
+                in turning complex ideas into user-focused designs that bring brands to life. From sleek landing 
+                pages to dynamic web apps, I thrive on crafting creative, scalable solutions that make digital 
+                interactions both impactful and delightful. Let's build something amazing together!
+            </p>
+            <div class="w-full flex items-center gap-4">
+                <button class="btn-primary">
+                    See My Work
+                </button>
+                <button class="btn-primary">
+                    About Me
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="lg:absolute lg:top-36 lg:right-6 flex flex-col gap-3 overflow-hidden">
+        <a href="https://www.linkedin.com/feed/">
+            <img src="linkedin.svg" alt="linkedin" class="w-[30px] h-[30px]">
+        </a>
+        <a href="https://web.facebook.com/">
+            <img src="facebook.svg" alt="facebook" class="w-[30px] h-[30px]">
+        </a>
+        <a href="https://github.com/george-asiedu">
+            <img src="github.svg" alt="github" class="w-[30px] h-[30px]">
+        </a>
+    </div>
+
 </div>
