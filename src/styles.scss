@@ -4,4 +4,11 @@
 
 * {
     font-family: "Poppins", serif;
+    overflow: hidden;
+}
+
+@layer components {
+    .links {
+        @apply inline-block px-[0.5rem] cursor-pointer mx-[0.5rem] text-sm transition duration-500 ease-in-out hover:font-medium;
+    }
 }
