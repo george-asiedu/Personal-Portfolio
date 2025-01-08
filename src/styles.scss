@@ -4,7 +4,7 @@
 
 * {
     font-family: "Roboto", serif;
-    overflow: hidden;
+    overflow: auto;
 }
 
 @layer components {
@@ -13,6 +13,6 @@
     }
 
     .btn-primary {
-        @apply px-3 py-[6px] bg-primary text-white text-sm rounded-md shadow-md transition duration-500 ease-in-out hover:bg-transparent hover:text-primary hover:border-slate-100 hover:border;
+        @apply px-3 py-[6px] bg-primary text-white text-sm rounded-md shadow-inner transition duration-500 ease-in-out hover:bg-transparent hover:text-primary hover:border-slate-100 hover:border-2;
     }
 }
