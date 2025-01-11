@@ -9,7 +9,7 @@
 
 @layer components {
     .links {
-        @apply inline-block px-[0.5rem] cursor-pointer mx-[0.5rem] text-sm transition duration-500 ease-in-out hover:font-medium;
+        @apply inline-block md:px-1 lg:px-[0.5rem] cursor-pointer md:mx-1 lg:mx-[0.5rem] text-sm transition duration-500 ease-in-out hover:font-medium;
     }
 
     .btn-primary {
