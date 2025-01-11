@@ -1,10 +1,10 @@
-<div class="w-full h-screen flex flex-col bg-white border-none px-[6%] py-[2%] relative">
+<div class="w-full h-auto lg:h-screen flex flex-col bg-white border-none px-[8%] md:px-[6%] py-[4%] md:py-[2%] relative">
     <header class="flex items-center justify-between w-full overflow-hidden border-none bg-inherit py-[4px] px-0">
         <div class="flex items-center">
             <div class="flex items-center justify-center lg:mr-6 h-[40px] w-[40px] rounded-full bg-primary">
                 <h1 class="tracking-wide font-bold text-white text-center">GA</h1>
             </div>
-            <nav>
+            <nav class="hidden lg:inline-block">
                 <a class="links" href="">Home</a>
                 <a class="links" href="#about_me">About Me</a>
                 <a class="links" href="#skills">Skills</a>
@@ -12,7 +12,7 @@
                 <a class="links" href="#testimonials">Testimonials</a>
             </nav>
         </div>
-        <div class="flex items-center">
+        <div class="hidden lg:flex lg:items-center">
             <app-theme-switcher />
             <a 
                 class="links bg-secondary text-tertiary hover:text-primary px-2 py-[6px] rounded-[4px]" 
@@ -30,36 +30,39 @@
                 Download Resume
             </a>
         </div>
+        <img class="lg:hidden" src="icon-menu.svg" alt="icon-menu">
     </header>
 
-    <div class="w-full pt-[8%] grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <div class="flex flex-col w-full gap-8">
+    <div class="w-full pt-[8%] grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-12">
+        <div class="flex flex-col w-full gap-5 lg:gap-8">
             <div class="polymorphic-container">
                 <img src="Hero_IMG.jpg" alt="hero_img" class="polymorphic-image">
             </div>                        
-            <h2 class="leading-[52px] text-[40px] tracking-wide font-medium">Hello!, I'm George Kwabena <br> Asiedu</h2>
+            <h2 class="hidden lg:block leading-[52px] text-[40px] tracking-wide font-medium">Hello!, I'm George Kwabena <br> Asiedu</h2>
+            <h2 class="lg:hidden text-[38px] tracking-wide font-medium">Hello!, I'm George Kwabena Asiedu</h2>
         </div>
         <div class="flex flex-col w-full gap-3">
-            <h3 class="text-2xl tracking-wide font-medium mb-4">A Frontend Web Developer based in <br> Accra, Ghana.</h3>
-            <p class="font-light text-[15px] tracking-wide mb-3 text-justify">
+            <h3 class="hidden lg:block text-2xl tracking-wide font-medium mb-4">A Frontend Web Developer based in <br> Accra, Ghana.</h3>
+            <h3 class="lg:hidden text-2xl tracking-wide font-medium mb-4">A Frontend Web Developer based in Accra, Ghana.</h3>
+            <p class="font-light text-[15px] tracking-wide mb-2 md:mb-3 text-justify">
                 I'm a Frontend Developer passionate about creating seamless, responsive, and visually stunning 
                 web experiences. With expertise in modern frameworks like Angular and React, I specialize 
                 in turning complex ideas into user-focused designs that bring brands to life. From sleek landing 
                 pages to dynamic web apps, I thrive on crafting creative, scalable solutions that make digital 
                 interactions both impactful and delightful. Let's build something amazing together!
             </p>
-            <div class="w-full flex items-center gap-4">
-                <button class="btn-primary">
-                    See My Work
-                </button>
-                <button class="btn-primary">
-                    About Me
-                </button>
+            <div class="w-full flex items-center gap-4 mb-5 lg:mb-0">
+                <a href="#projects" class="btn-primary">
+                    My Skills
+                </a>
+                <a href="#lets_talk" class="btn-primary">
+                    Let's Talk
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="lg:absolute lg:top-36 lg:right-6 flex flex-col gap-3 overflow-hidden">
+    <div class="hidden md:absolute md:top-40 md:right-6 lg:top-36 lg:right-6 md:flex md:flex-col md:gap-5 overflow-hidden">
         <a href="https://www.linkedin.com/in/george-kwabena-asiedu">
             <img src="linkedin.svg" alt="linkedin" class="w-[30px] h-[30px]">
         </a>
